@@ -2,6 +2,8 @@
 
 A lightweight Python + Tkinter desktop app for exploring FX pairs trading / statistical arbitrage ideas. Select two FX pairs, choose a hedge-ratio model, tune signal thresholds, and generate the spread used for mean-reversion signals — all from a simple GUI.
 
+![Screenshot of the App](https://github.com/Jrogrobs/Simple-xVA-Pricing-Model/blob/6f56d891566854c1fa652aaa391979447fd53466/Example.png)
+
 **What’s inside**
 
 _GUI Dashboard (Tkinter/ttk)_   
