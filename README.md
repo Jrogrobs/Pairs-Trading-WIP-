@@ -2,7 +2,7 @@
 
 A lightweight Python + Tkinter desktop app for exploring FX pairs trading / statistical arbitrage ideas. Select two FX pairs, choose a hedge-ratio model, tune signal thresholds, and generate the spread used for mean-reversion signals — all from a simple GUI.
 
-![Screenshot of the App]([https://github.com/Jrogrobs/Pairs-Trading-WIP-/blob/main/pairs_trading_app.png])
+![Screenshot of the App](https://github.com/Jrogrobs/Pairs-Trading-WIP-/blob/main/pairs_trading_app.png)
 
 **What’s inside**
 
