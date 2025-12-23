@@ -1,17 +1,35 @@
-# PFX Pairs Trading Dashboard (WIP)
-A Python/Tkinter desktop dashboard for researching and monitoring FX pairs trading / statistical arbitrage setups. The app provides a simple GUI to select two FX pairs, choose frequency and strategy parameters, and run core spread/mean-reversion analytics.
+# FX Pairs Trading Dashboard (WIP)
 
-**Key features:**
-Interactive GUI (Tkinter/ttk): asset selection, data frequency, and strategy controls (entry/exit z-score, rolling window, stop-loss/take-profit, transaction costs).
+A lightweight Python + Tkinter desktop app for exploring FX pairs trading / statistical arbitrage ideas. Select two FX pairs, choose a hedge-ratio model, tune signal thresholds, and generate the spread used for mean-reversion signals — all from a simple GUI.
 
-Hedge ratio estimation methods:
-OLS regression (static hedge ratio via statsmodels)
-Kalman Filter (time-varying hedge ratio via pykalman)
-Johansen cointegration (cointegration vector via coint_johansen)
-Spread construction & monitoring: computes the spread based on the selected hedge-ratio method to support z-score signals and trade logic (to be expanded).
-Plotting hooks (Matplotlib + TkAgg): placeholders for price overlays, spread + z-score charts, signal visualization, drawdowns, and live correlation panels.
+**What’s inside**
 
+_GUI Dashboard (Tkinter/ttk)_   
+* Asset selection + strategy controls (frequency, rolling window, entry/exit z-scores, stop-loss, take-profit, transaction costs).
 
-**Status / TODO**
-_Work in progress:_ execution logic, performance metrics, and trade logging are not fully implemented yet.
-_Data integration:_ currently set up for a “Yahoo” placeholder; Interactive Brokers (IBKR) connection and live/streaming market data still need to be added.
+_Hedge Ratio Engines_   
+* OLS (statsmodels): static hedge ratio + intercept   
+* Kalman Filter (pykalman): time-varying hedge ratio / intercept   
+* Johansen Cointegration: cointegration vector–based hedge ratio   
+
+_Spread Construction_   
+* Builds the spread based on the selected hedge-ratio method (foundation for z-score signals + trading logic).   
+
+_Plotting Hooks (Matplotlib / TkAgg)_   
+* Scaffolding for: price overlays, spread time series, z-score bands + entry/exit signals, drawdowns, rolling correlation.
+
+**Status**
+
+🚧 Work in Progress — strategy execution, performance analytics, and trade logging are still being built.
+
+_TODO_   
+✅ Finalise signal generation + backtest loop
+
+✅ Add performance metrics + trade log outputs
+
+🔌 Integrate Interactive Brokers (IBKR) for live/streaming data + execution
+
+📊 Complete the embedded plots (spread, z-score, drawdown, correlation)
+
+**Tech Stack**   
+Python · pandas · numpy · statsmodels · pykalman · matplotlib · tkinter
